@@ -1,0 +1,29 @@
+.orderSummary {
+    margin: 2%;
+    width: 70%;
+
+    .orderSummary__item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2%;
+
+        &>p {
+            width: 25%;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            /* Don't forget this one */
+            text-overflow: ellipsis;
+        }
+
+        &>img {
+            max-height: 4vh;
+        }
+    }
+
+    &>p {
+        text-align: center;
+    }
+}

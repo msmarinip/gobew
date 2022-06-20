@@ -1,0 +1,26 @@
+@use "../variables" as v;
+
+.categories {
+    border-radius: 10px;
+    background: v.$Bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    width: 90%;
+    margin: 2%;
+
+    &>.categories__parent {
+        margin: 1%;
+        border-radius: 16px;
+        cursor: pointer;
+        background: v.$LightBlue;
+        padding-left:  4%;
+    }
+
+    &>.categories__child {
+        margin: 1%;
+        cursor: pointer;
+
+    }
+}

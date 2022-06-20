@@ -1,0 +1,174 @@
+@use "../variables" as v;
+
+.highlight--content__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-weight: bold;
+        font-size: 24px;
+        font-style: italic;
+        // text-decoration: underline;
+        text-transform: uppercase;
+        margin-top: 2%;
+    }
+
+    .highlight--prods__container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 1%;
+        min-width: 60%;
+        max-width: 60%;
+        justify-content: space-between;
+
+        .react--paginate__der {
+            color: #17252A;
+            float: right;
+            border: none;
+            background: none;
+
+            :active {
+                -webkit-animation: heartbeat 1s ease-in-out infinite both;
+                animation: heartbeat 1s ease-in-out infinite both;
+            }
+        }
+
+    }
+
+    .highlight--pagination__container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: .6rem;
+
+        ul {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+
+            li {
+                margin: 2px;
+                width: 10%;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #d8ecef;
+                color: #17252A;
+
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 2%;
+                    width: 100%;
+                    cursor: default;
+                    user-select: none;
+                }
+            }
+
+            .selected {
+                background-color: #17252A;
+                color: white;
+            }
+        }
+    }
+}
+
+.highlight--card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 20vh;
+    min-height: 30vh;
+    margin: 3%;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: v.$Primary;
+        font-weight: bold;
+    }
+
+    img {
+        max-height: 30vh;
+        max-width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+}
+
+
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }

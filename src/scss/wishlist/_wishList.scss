@@ -1,0 +1,14 @@
+.wishList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 99%;
+    align-items: center;
+    &>div{
+        display: flex;
+
+    }
+    // .productard{
+    //     max-width:30% ;
+    // }
+}

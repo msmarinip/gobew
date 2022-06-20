@@ -1,0 +1,55 @@
+@use "../../variables" as v;
+@import "../../mixins/mixins";
+
+.newReviewForm {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &>div {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+
+        &>label {
+            margin: 1%;
+
+            .stars {
+                height: 30px;
+                width: 30px;
+                color: v.$Primary;
+            }
+
+            .Selected {
+                color: v.$Secondary;
+            }
+
+            &>input {
+                display: none;
+            }
+        }
+
+    }
+
+    &>textarea {
+        width: 60%;
+        height: 50%;
+        resize: none;
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        padding: 1%;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+
+        &::placeholder {
+            color: #ccc;
+        }
+    }
+
+    &>button {
+        @include btn()
+    }
+}

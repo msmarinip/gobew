@@ -1,0 +1,100 @@
+@import "../mixins/mixins";
+
+.orderDetail__address {
+    border: 1px solid black;
+    margin: 1%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+
+    .orderDetail__address--title {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .orderDetail__address--address {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-around;
+
+        &>p {
+            &>span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .bold {
+        font-weight: bold;
+        text-decoration: underline;
+        align-self: center;
+    }
+}
+
+.orderDetail__cart {
+    border: 1px solid black;
+    margin: 1%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+
+    .orderDetail__cart--title {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .orderDetail__cart--bougth {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-around;
+
+        &>p {
+            &>span {
+                font-weight: bold;
+            }
+        }
+
+        .cart {
+
+            align-self: center;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .orderDetail__cart--item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 16px;
+            padding: 2%;
+            background-color: v.$LightBlue;
+
+            &>p {
+                max-width: 30%;
+                margin: 1%;
+            }
+
+            .Link {
+                max-width: 50%;
+                @include btn();
+                height: 2vh;
+                background-color: v.$Primary;
+                color: v.$White;
+
+                &:hover {
+                    background-color: v.$Secondary;
+                }
+            }
+        }
+    }
+}

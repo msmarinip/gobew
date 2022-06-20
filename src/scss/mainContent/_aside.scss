@@ -1,0 +1,25 @@
+@use "../variables" as v;
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1%;
+
+    .filters--faqs {
+        border-radius: 16px;
+        background: #b1d8de;
+        // padding: 1%;
+        margin: 1%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-size: 20px;
+            color: #17252a;
+        }
+    }
+}

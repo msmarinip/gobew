@@ -1,0 +1,13 @@
+@import "./aside";
+@import "./product";
+@import "./highLight";
+
+.MainContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &>div {
+        max-width: 80%;
+    }
+}

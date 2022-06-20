@@ -1,0 +1,71 @@
+@use "../variables" as v;
+@import "./loginGoogle";
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+
+    .loginForm__title {
+        margin-top: 3%;
+
+    }
+
+    .loginForm--container {
+        margin: 3%;
+        width: 60%;
+        padding: 3%;
+        height: 50%;
+        border-radius: 16px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .createUser__btn {
+            @include btn(40%);
+            width: 20%;
+        }
+
+        &>input {
+            width: 50%;
+            text-align: center;
+
+            border: 0.2px solid black;
+            border-radius: 16px;
+            padding: 16px;
+            height: 3vh;
+            font-size: 1.2rem;
+            margin: 0.5%;
+
+            &:hover {
+                outline: none;
+                background-color: v.$LightBlue;
+            }
+        }
+
+        .loginForm__login--btn-container {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+
+            .loginForm__login--btn {
+                @include btn(40%);
+                width: 40%;
+            }
+
+            .loginForm__singup--link {
+                width: 40%;
+
+                .loginForm__singup--btn {
+                    @include btn(100%);
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

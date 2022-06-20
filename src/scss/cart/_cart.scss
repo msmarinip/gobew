@@ -1,0 +1,42 @@
+@import "../mixins/mixins";
+@import "./cardItem";
+@import "./orderForm";
+@import "./checkout";
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .cart__cleanCart {
+        align-self: flex-end;
+        @include btn(40%);
+        padding: 1.5%;
+    }
+
+    .cart__link {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+
+        .cart__link--button {
+            @include btn(100%);
+            margin: 0%;
+
+        }
+    }
+}
+
+.cart__noItem--container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

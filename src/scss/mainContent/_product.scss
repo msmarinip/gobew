@@ -1,0 +1,22 @@
+@use "../variables" as v;
+@import "./productCard";
+@import "./productDetails";
+@import "./productAdd";
+@import "./reviews/reviews";
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .products__noProducts {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 4%;
+        color: v.$Primary ;
+    }
+
+}

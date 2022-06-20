@@ -1,0 +1,29 @@
+.googleForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .googleForm--signIn {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .googleFormSuccess__container {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        align-items: center;
+        flex-direction: column;
+
+        .googleFormSuccess--link {
+            width: 60%;
+
+            .googleFormSuccess--btn {
+                @include btn(100%);
+                width: 100%;
+            }
+        }
+    }
+}

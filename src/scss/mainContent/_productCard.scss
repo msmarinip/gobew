@@ -1,0 +1,127 @@
+@use "../variables" as v;
+@import "../mixins/mixins";
+
+.productCard {
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    margin: 1%;
+    border: 1px v.$Primary solid;
+    border-radius: 16px;
+
+    .productCard__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 96%;
+        text-decoration: none;
+        color: v.$Primary;
+
+        .productCard__last {
+            -webkit-animation: vibrate-1 2s linear infinite both;
+            animation: vibrate-1 2s linear infinite both;
+        }
+
+        .productCard__img {
+            max-height: 30vh;
+            max-width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        .productCard__name {
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            /* Don't forget this one */
+            text-overflow: ellipsis;
+        }
+        
+        &>p {
+            font-weight: bold;
+        }
+    }
+
+    .wished {
+        color: v.$Secondary;
+        align-self: flex-end;
+        padding-right: 4%;
+    }
+    
+    .notWished {
+        color: v.$Primary;
+        align-self: flex-end;
+        padding-right: 4%;
+    }
+}
+
+
+
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}

@@ -1,0 +1,140 @@
+@use "../variables" as v;
+@import "./searchBar";
+@import "./categories";
+@import "./orderin";
+
+.nav {
+    width: 100%;
+    background-color: v.$Primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+
+    .nav__logo {
+        margin: 0.5%;
+        margin-left: 1%;
+
+        .nav__logo--link {
+            .nav__logo--img {
+                height: 5vh;
+            }
+        }
+    }
+
+    .nav__loginCart {
+        display: flex;
+        text-align: center;
+        width: 20%;
+        justify-content: flex-end;
+        padding-right: 2%;
+
+        .nav__loginCart--cart {
+            margin: 1% 4% 0% 2%;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            .nav__loginCart--cart-circle {
+                display: flex;
+                font-size: 1.5vh;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background-color: #07bc0c;
+
+                .nav__loginCart--cart-text {
+                    text-align: center;
+
+                }
+
+            }
+
+            .nav__loginCart--cart-img {
+                height: 5vh;
+            }
+        }
+
+        .nav__loginCart--login {
+            margin: 1% 3% 0% 2%;
+
+            text-decoration: none;
+            color: white;
+
+            .nav__loginCart--login-img {
+                height: 5vh;
+            }
+
+            .nav__loginCart--login-render {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                &>div {
+                    display: flex;
+                    position: absolute;
+                    top: 10px;
+                    width: 200%;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 17vh;
+
+                    .nav__loginCart--login-logout {
+                        width: 100%;
+                        border-radius: 16px;
+                        background-color: v.$Primary;
+                        transition: background-color 0.3s;
+                        cursor: default;
+                        user-select: none;
+
+                        padding: 1%;
+
+                        &:hover {
+                            background-color: v.$Secondary;
+                        }
+                    }
+
+                    .nav__loginCart--login-profile {
+                        width: 100%;
+                        color: white;
+                        text-decoration: none;
+                        border-radius: 16px;
+                        background-color: v.$Primary;
+                        transition: background-color 0.3s;
+
+                        &:hover {
+                            background-color: v.$Secondary;
+                        }
+                    }
+
+                    .nav__loginCart--login-fav {
+                        width: 100%;
+                        color: white;
+                        text-decoration: none;
+                        border-radius: 16px;
+                        background-color: v.$Primary;
+                        transition: background-color 0.3s;
+
+                        &:hover {
+                            background-color: v.$Secondary;
+                        }
+                    }
+                }
+            }
+
+            .nav__loginCart--login-hidden {
+                display: none;
+            }
+        }
+    }
+}

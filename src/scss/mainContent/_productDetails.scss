@@ -1,0 +1,58 @@
+@use "../variables" as v;
+
+.productDetail {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .productDetail__details {
+        margin: 5% 5% 2% 5%;
+        padding: 5%;
+        display: flex;
+        border: 1px v.$Primary solid;
+        border-radius: 16px;
+
+
+        .productDetail--img {
+            max-height: 40vh;
+            border-radius: 16px;
+            object-fit: cover;
+            margin: 2%;
+        }
+
+        .productDetail--container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            margin: 2%;
+
+            .productDetail__productName {
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: v.$Primary;
+            }
+        }
+
+        .productDetail--container-btn {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    .wished {
+        color: v.$Secondary;
+        width: 40px;
+        height: 40px;
+    }
+
+    .notWished {
+        color: v.$Primary;
+        width: 40px;
+        height: 40px;
+    }
+}

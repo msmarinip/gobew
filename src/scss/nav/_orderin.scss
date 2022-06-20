@@ -1,0 +1,17 @@
+@import "../mixins/mixins";
+
+.orderButtons {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+
+    .orderButtons__price {
+        @include btn(0%);
+        width: 40%;
+    }
+
+    .orderButtons__alph {
+        @include btn(0%);
+        width: 40%;
+    }
+}

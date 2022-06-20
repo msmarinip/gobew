@@ -1,0 +1,36 @@
+.faqs--content__container {
+    padding: 2%;
+    margin: 10px;
+
+    .faqs--container {
+        display: flex;
+        margin: 2rem;
+        background-color: #f3fafa;
+        margin: 10px;
+        padding: 2%;
+        //border-left: #17252A 3px solid;
+        border: 3px solid #17252A;
+        border-radius: 1%;
+        align-items: center;
+        justify-content: flex-start;
+
+        .faqs--container__desc {
+            margin-left: 5vw;
+        }
+    }
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        font-style: italic;
+        color: #17252A;
+    }
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #17252A;
+    }
+}
